@@ -1,4 +1,4 @@
-# MVGR_Dataset
+# MVGR_Object_Dataset
 
 MVGR é uma base de dados que possui 3000 imagens divididas em três classes de 1000 imagens cada:
 
