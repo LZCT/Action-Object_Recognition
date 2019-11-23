@@ -1,22 +1,29 @@
 # Dataset
 
-Essa base de dados que possui 10855 imagens de objetos divididas em seis calsses:
+Essa base de dados que possui 10.855 imagens de objetos divididas em seis classes:
 
-* 1475 Imagens de Pepsi 600ml
-* 1925 Imagens de Latas de Bebida, em sua maioria de Coca-Cola
-* 2600 Imagens de Long Neck de Cerveja, em sua maioria da Heineken
-* 1475 Imagens de Pacotes de Bolachas
-* 1580 de Suco de Caixinha
-* 1800 de Ruffles
+* 1.475 Imagens de Pepsi 600ml
+* 1.925 Imagens de Latas de Bebida, em sua maioria de Coca-Cola
+* 2.600 Imagens de Long Neck de Cerveja, em sua maioria da Heineken
+* 1.475 Imagens de Pacotes de Bolachas
+* 1.580 de Suco de Caixinha
+* 1.800 de Ruffles
 
 A base também possui 2.700 imagens de ações separadas em duas classes:
 
 * 1385 Imagens da ação de pegar um produto
 * 1385 Imagens da ação de consumir um produto
 
-Cada imagem acompanha um respectivo arquivo de extensão .txt que indica a bounding box do objeto naquela imagem.
+OBS: Cada imagem acompanha um respectivo arquivo de extensão .txt que indica a bounding box do objeto naquela imagem.
 
-[Para efetuar ter acesso ao download do dataset, basta clicar aqui!](https://mega.nz/#F!VgEm0Qxa!oxIAStvvzWdwyC1HWId3fA)
+
+A base ainda conta com 620 vídeos gravados utilizando o esqueleto geométrico do KinectV2, sendo:
+
+* 310 Vídeos da ação de pegar um produto
+* 310 Vídeos da ação de consumir um produto
+
+
+[DOWNLOAD DO DATASET](https://mega.nz/#F!VgEm0Qxa!oxIAStvvzWdwyC1HWId3fA)
 
 ## Referências
 
