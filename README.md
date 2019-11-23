@@ -11,8 +11,8 @@ Essa base de dados que possui 10.855 imagens de objetos divididas em seis classe
 
 A base também possui 2.700 imagens de ações separadas em duas classes:
 
-* 1385 Imagens da ação de pegar um produto
-* 1385 Imagens da ação de consumir um produto
+* 1.385 Imagens da ação de pegar um produto
+* 1.385 Imagens da ação de consumir um produto
 
 OBS: Cada imagem acompanha um respectivo arquivo de extensão .txt que indica a bounding box do objeto naquela imagem.
 
