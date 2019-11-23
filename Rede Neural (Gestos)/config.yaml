@@ -1,0 +1,100 @@
+data:
+  dataset: {name: BaseOficial - TCC, samples: 428, type: private}
+  datasetLoadOption: batch
+  kfold: 1
+  mapping:
+    filename:
+      options: {Normalization: false, Scaling: 1}
+      port: InputPort0
+      shape: ''
+      type: Numpy
+    label:
+      options: {}
+      port: OutputPort0
+      shape: ''
+      type: Categorical
+  numPorts: 1
+  samples: {split: 1, test: 0, training: 342, validation: 85}
+  shuffle: true
+model:
+  connections:
+  - {source: dense_39, target: activation_128}
+  - {source: dropout_14, target: dense_39}
+  - {source: dense_38, target: batchnormalization_198}
+  - {source: batchnormalization_198, target: activation_127}
+  - {source: activation_128, target: dense_40}
+  - {source: activation_126, target: dense_38}
+  - {source: dense_37, target: activation_126}
+  - {source: activation_127, target: dropout_14}
+  - {source: dense_40, target: Output_0}
+  - {source: flatten, target: dense_37}
+  - {source: Input_0, target: flatten}
+  layers:
+  - args: {}
+    class: Input
+    name: Input_0
+    x: 60
+    y: 60
+  - args: {}
+    class: Flatten
+    name: flatten
+    x: 60
+    y: 180
+  - args: {activation: linear, output_dim: 2048}
+    class: Dense
+    name: dense_37
+    x: 60
+    y: 300
+  - args: {activation: relu}
+    class: Activation
+    name: activation_126
+    x: 60
+    y: 420
+  - args: {activation: linear, output_dim: 1024}
+    class: Dense
+    name: dense_38
+    x: 410
+    y: 60
+  - args: {}
+    class: BatchNormalization
+    name: batchnormalization_198
+    x: 410
+    y: 180
+  - args: {activation: relu}
+    class: Activation
+    name: activation_127
+    x: 410
+    y: 300
+  - args: {p: 0.4}
+    class: Dropout
+    name: dropout_14
+    x: 410
+    y: 420
+  - args: {activation: linear, output_dim: 1024}
+    class: Dense
+    name: dense_39
+    x: 760
+    y: 60
+  - args: {activation: relu}
+    class: Activation
+    name: activation_128
+    x: 758
+    y: 180
+  - args: {activation: softmax, output_dim: 2}
+    class: Dense
+    name: dense_40
+    x: 760
+    y: 300
+  - args: {}
+    class: Output
+    name: Output_0
+    x: 760
+    y: 420
+params:
+  advance_params: true
+  batch_size: 32
+  is_custom_loss: false
+  loss_func: categorical_crossentropy
+  num_epoch: 50
+  optimizer: {name: Adadelta}
+project: Projeto Oficial
