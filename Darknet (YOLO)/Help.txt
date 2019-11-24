@@ -1,0 +1,7 @@
+Para execução do YOLO, basta copiar os arquivos de peso para "..\build\darknet\x64\backup\".
+
+Os arquivos obj.names e obj.data devem ser movidos para "..\build\darknet\x64\data\".
+
+E a CFG para "..\build\darknet\x64\".
+
+Comandos de execução podem ser visualizados no Github da própria ferramenta.
