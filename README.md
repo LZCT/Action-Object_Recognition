@@ -1,6 +1,12 @@
+# Action-Object Recognition
+
+São apresentadas duas abordagens distintas para o reconhecimento de ações. A abordagem principal utiliza detectores de objetos para reconhecer a ação e o produto, enquanto a abordagem secundária utiliza uma rede neural para realizar apenas o reconhecimento de gestos do cliente.
+
+[DOWNLOAD DAS CONFIGURAÇÕES E DOS PESOS DAS REDES](https://mega.nz/#F!QkERWCyJ!nS2D_Qv9bKdwrOeWy4FQsg)
+
 # Dataset
 
-Essa base de dados que possui 10.855 imagens de objetos divididas em seis classes:
+É apresentado também uma base de dados que possui 10.855 imagens de objetos divididas em seis classes:
 
 * 1.475 Imagens de Pepsi 600ml
 * 1.925 Imagens de Latas de Bebida, em sua maioria de Coca-Cola
